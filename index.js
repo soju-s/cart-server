@@ -14,7 +14,7 @@ const router=require('./routes/router')
 const server=express()
 
 // variable to hold port number because it is dynamic
-const port=3000
+const port=3000 || process.env.PORT
 
 // run server
 server.listen(port,()=>{
